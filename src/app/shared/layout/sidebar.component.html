@@ -1,0 +1,11 @@
+<div id="layout-sidebar" [ngClass]="menuActive === true ? 'active' : ''">
+  <div class="layout-menu">
+    <!--<a>{{this.menuActive}}</a>-->
+    <a (click)="goToElem('#site-gallery')" >Experience</a>
+    <a (click)="goToElem('#site-recommendations')">My references</a>
+    <a (click)="goToElem('#site-profile-info')">Info</a>
+    <a (click)="goToElem('#site-expertness')">Expertness</a>
+    <a (click)="goToElem('#site-hire-me')">Hire Me</a>
+    <a (click)="goToElem('#site-contact-me')">Contact me</a>
+  </div>
+</div>

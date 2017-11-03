@@ -1,0 +1,63 @@
+<div id="site-hire-me" class="ui-g ui-g-12 site-hire-me">
+  <div class="ui-g-12 ui-sm-12 text-center">
+    <h3>Need Any Help?</h3>
+    <h4><i class="fa fa-thumbs-up fa-2x"></i> I am available for job hire</h4>
+
+    <nav class="cl-effect-2">
+      <a (click)="goToHeadingInContainer()"><span data-hover="Hire Me">Hire Me</span></a>
+    </nav>
+  </div>
+</div>
+<section id="site-contact-me" class="ui-g ui-g-12 site-contact-me">
+  <div class="ui-g ui-g-12">
+    <div class="overlay"></div>
+    <div class="ui-g-12 text-center text-capitalize">
+      <h3>want to discuss a project?</h3>
+      <h4>just drop a message below and i'll get in touch!</h4>
+      <hr>
+    </div>
+  </div>
+  <div class="ui-g ui-g-12">
+    <section class="ui-g ui-g-12 ui-xs-12">
+      <div class="ui-g ui-md-12 ui-xs-12 ui-sm-12 text-center">
+        <div class="ui-g-6 ui-sm-12 ui-xs-12">
+          <div class="block">
+            <i class="fa fa-envelope fa-2x"></i>
+            <h4 class="text-uppercase">Queries</h4>
+            <ul class="list-unstyled">
+              <li>antonio.martino.job@gmail.com</li>
+            </ul>
+          </div>
+        </div>
+        <div class="ui-g-6 ui-sm-12 ui-xs-12">
+          <div class="block">
+            <i class="fa fa-phone fa-2x"></i>
+            <h4 class="text-uppercase">Call Me</h4>
+            <ul class="list-unstyled">
+              <li>(+39) 3923021434</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <form action="" class="ui-g ui-md-12 ui-xs-12 ui-sm-12 text-center">
+        <div class="ui-g ui-g-6 ui-md-6 ui-sm-12 ui-xs-12">
+          <div class="ui-g ui-g-12 ui-sm-12 ui-xs-12 form-group">
+           <label for="your_name">Your Name</label>
+           <input type="text" class="form-control" id="field1" placeholder="Write Your Name">
+          </div>
+          <div class="ui-g ui-g-12 ui-sm-12 ui-xs-12 form-group">
+            <label for="your_email">Email</label>
+            <input type="email" class="form-control" id="field2" placeholder="Enter Your Email">
+          </div>
+        </div>
+        <div class="ui-g ui-g-6 ui-md-6 ui-sm-12 ui-xs-12">
+          <label for="your_message">Your Message</label>
+          <textarea class="form-control" rows="5" id="field3" placeholder="Write Your Message"></textarea>
+        </div>
+        <div class="ui-g ui-g-12 ui-md-12 ui-sm-12 ui-xs-12 text-center margin-top-55 margin-bottom-55">
+          <a (click)="openEmailClient($event)"><button class="btn btn-orange">Send Message</button></a>
+        </div>
+      </form>
+    </section>
+  </div>
+</section>

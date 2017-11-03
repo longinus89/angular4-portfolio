@@ -1,0 +1,26 @@
+<div id="layout-topbar">
+    <a href="#" class="menu-button" (click)="onMenuButtonClick($event)">
+        <i class="fa fa-bars"></i>
+    </a>
+    <ul class="topbar-menu">
+      <!--<a>{{this.menuActive}}</a>-->
+      <li>
+        <a (click)="goToElem('#site-gallery')" >Experience</a>
+      </li>
+      <li>
+        <a (click)="goToElem('#site-recommendations')">My references</a>
+      </li>
+      <li>
+        <a (click)="goToElem('#site-profile-info')">Info</a>
+      </li>
+      <li>
+        <a (click)="goToElem('#site-expertness')">Expertness</a>
+      </li>
+      <li>
+        <a (click)="goToElem('#site-hire-me')">Hire Me</a>
+      </li>
+      <li>
+        <a (click)="goToElem('#site-contact-me')">Contact me</a>
+      </li>
+    </ul>
+</div>

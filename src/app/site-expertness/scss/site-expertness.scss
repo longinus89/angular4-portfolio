@@ -1,0 +1,41 @@
+@import '_variables';
+.site-expertness{
+  .site-expertness-title{
+      font-size: 24px;
+  }
+  .text-center{
+    width: 100%;
+    text-align: center;
+  }
+  h3 {
+      font-weight: 700;
+      i {
+        margin-right: 14px;
+      }
+  }
+  .block {
+    margin-top: 26px;
+    margin-bottom: 26px;
+    p {
+      font-size: 14px;
+    }
+    h4 {
+      font-weight: 700;
+    }
+    .fa-3x {
+      font-size: 3em;
+    }
+  }
+  color: #fff;
+  background: #07aaf5;
+  position: relative;
+  padding-top: 90px;
+  padding-bottom: 90px;
+
+  @media screen and (max-width: 642px) {
+    .block {
+      text-align: center;
+    }
+  }
+
+}

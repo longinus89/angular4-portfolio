@@ -1,0 +1,24 @@
+<div id="site-recommendations" class="ui-g ui-g-12 site-recommendations">
+  <div id="site-recommendation-list" class="ui-g ui-g-12 site-recommendation-list">
+    <div class="site-recommendation" [ngClass]="(currentItem==index) ? ' active' : ''" [@siteRecommendationStatus]="item.status" *ngFor="let item of items; let index=index">
+      <div class="ui-grid ui-grid-responsive">
+          <div class="ui-grid-row site-recommendation-description">
+              <div class="ui-grid-col-12">
+                {{item.description}}
+              </div>
+          </div>
+          <div class="ui-grid-row site-recommendation-title">
+              <div class="ui-grid-col-12">
+                {{item.owner.getFullOwnerTitle()}}
+              </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="site-recommendations-owners">
+    <div class="site-recommendation-owner" *ngFor="let item of items; let index=index">
+      <img (click)="clickOwner(index)" [ngClass]="(currentItem==index) ? ' active' : ''" alt="profile picture" src="{{item.image}}"/>
+    </div>
+  </div>
+</div>

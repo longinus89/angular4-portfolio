@@ -1,0 +1,4 @@
+<app-layout-header [data]="menuActive" (messageEvent)="receiveMessage($event)"></app-layout-header>
+<app-layout-sidebar [data]="menuActive" (messageEvent)="receiveMessage($event)"></app-layout-sidebar>
+<router-outlet></router-outlet>
+<app-layout-footer></app-layout-footer>

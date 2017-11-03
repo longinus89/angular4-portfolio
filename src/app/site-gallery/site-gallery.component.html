@@ -1,0 +1,30 @@
+<div id="site-gallery" class="ui-g ui-g-12 site-gallery">
+  <div *ngFor="let item of items" class="site-gallery-element ui-g-12 ui-sm-12 ui-md-6 ui-lg-4 ui-g-nopad">
+    <div class="ui-g ui-g-12 site-gallery-element-preview-image ui-g-nopad">
+      <img src='{{item.previewImage}}' />
+    </div>
+    <div class="ui-g ui-g-12 site-gallery-element-preview-caption" (click)="op.toggle($event)">
+      <h3>{{item.previewTitle}}</h3>
+      <hr>
+      <h4>{{item.previewDescription}}</h4>
+    </div>
+    <p-overlayPanel #op [dismissable]="true" [showCloseIcon]="true" appendTo="body">
+      <div class="overlay-panel-header">
+        <h4 class="modal-title" id="myModalLabel2">{{item.extendedTitle}}</h4>
+      </div>
+      <div class="overlay-panel-content">
+        {{item.extendedDescription}}
+
+        <carousel>
+          <slide *ngFor="let slide of item.gallery; let index=index">
+            <img [src]="slide">
+            <div class="carousel-caption">
+              <h4>Slide {{index}}</h4>
+            </div>
+          </slide>
+        </carousel>
+      </div>
+    </p-overlayPanel>
+  </div>
+
+</div>

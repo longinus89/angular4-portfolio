@@ -1,0 +1,71 @@
+{
+  "site-gallery-elements": [
+    {
+      "uuid": 1,
+      "previewImage": "assets/images/gallery/istella2.jpg",
+      "previewTitle": "i-stella.com",
+      "previewDescription" : "Designing, Development",
+      "extendedTitle" : "Developed i-stella.com",
+      "extendedDescription" : "I've developed a job search portal for home domestic workers (i-stella.com) where I used mongoDB noSql technology with parallel calculation algorithms to match profiles and break computing times.",
+      "gallery" : [
+        "assets/images/gallery/cattura4.jpg",
+        "assets/images/gallery/istella1.jpg",
+        "assets/images/gallery/istella3.jpg",
+        "assets/images/gallery/istella4.jpg"
+      ]
+    },
+    {
+      "uuid": 2,
+      "previewImage": "assets/images/gallery/campari2.jpg",
+      "previewTitle": "Campari web app",
+      "previewDescription" : "Designing, Development",
+      "extendedTitle" : "Designed and created mobile app for Campari Corporate",
+      "extendedDescription" : "Designed and developed emotional interactive web app for Campari Corporate, designing interfaces through specific guidelines suggested by their brand",
+      "gallery" : [
+        "assets/images/gallery/campari1.jpg",
+        "assets/images/gallery/campari3.jpg",
+        "assets/images/gallery/campari4.jpg"
+      ]
+    },
+    {
+      "uuid": 3,
+      "previewImage": "assets/images/gallery/sardegna2.jpg",
+      "previewTitle": "Sardegna Medical App",
+      "previewDescription" : "Designing software and server architecture, Development",
+      "extendedTitle" : "Designing, development and deployed",
+      "extendedDescription" : "Developed an interactive mobile app for Sardinia region useful for searching and retrieving medical and health informations. Deployed also a backend with React and a product landing page.",
+      "gallery" : [
+        "assets/images/gallery/sardegna1.jpg",
+        "assets/images/gallery/sardegna3.jpg",
+        "assets/images/gallery/sardegna4.jpg",
+        "assets/images/gallery/cattura1.jpg",
+        "assets/images/gallery/cattura2.jpg",
+        "assets/images/gallery/cattura3.jpg"
+      ]
+    },
+    {
+      "uuid": 4,
+      "previewImage": "assets/images/gallery/hpb0.jpg",
+      "previewTitle": "Human Brain Project financial modules",
+      "previewDescription" : "Designing, Development and testing",
+      "extendedTitle" : "Designed for humanbrainproject.eu",
+      "extendedDescription" : "I've created monitoring and financial critical backend modules to manage european opencalls, specifically for humanbrainproject.eu.",
+      "gallery" : [
+        "assets/images/gallery/hpb1.jpg",
+        "assets/images/gallery/hpb2.jpg",
+        "assets/images/gallery/hpb3.jpg"
+      ]
+    },
+    {
+      "uuid": 5,
+      "previewImage": "assets/images/gallery/echord1.jpg",
+      "previewTitle": "ECHORD++ monitoring and financial modules",
+      "previewDescription" : "Development and testing",
+      "extendedTitle" : "Designed for humanbrainproject.eu",
+      "extendedDescription" : "I've created monitoring and financial critical backend modules to manage european opencalls, specifically for ECHORD (European coordination hub for Open Robotics Development).",
+      "gallery" : [
+        "assets/images/gallery/echord2.jpg"
+      ]
+    }
+  ]
+}

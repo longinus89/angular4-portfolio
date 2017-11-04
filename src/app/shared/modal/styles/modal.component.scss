@@ -1,0 +1,98 @@
+/* .ui-overlaypanel{
+  left: 50% !important;
+  -webkit-transform: translate(-50%, -50%) !important;
+  transform: translate(-50%, -50%) !important;
+  width: 90%;
+  padding: 0;
+  margin: 0;
+  position: fixed !important;
+}
+.ui-overlaypanel{
+  top: 50% !important;
+}
+
+@media screen and (max-width: 500px) {
+  .ui-overlaypanel{
+    top: 55% !important;
+  }
+}*/
+
+.modal-wrapper {
+  /* modals are hidden by default */
+  display: none;
+
+  .modal {
+      /* modal container fixed across whole screen */
+      position: fixed;
+      top: 60px;
+      right: 0;
+      bottom: 0;
+      left: 0;
+
+      /* z-index must be higher than .modal-background */
+      z-index: 1000;
+
+      /* enables scrolling for tall modals */
+      overflow: auto;
+
+      .modal-body {
+        padding: 3px;
+        margin: 17px;
+
+
+          .overlay-panel-content {
+            background: #fff;
+            padding: 1.5em;
+            overflow-y: auto;
+            overflow-x: hidden;
+            max-height: 400px;
+            font-size: 14px;
+            padding: 30px;
+          }
+          .overlay-panel-header {
+            a {
+              &.modal-close {
+                color: #222222;
+                position: absolute;
+                top: -.5em;
+                right: -.5em;
+                border-radius: 100%;
+                box-sizing: border-box;
+                border: 1px solid #d6d6d6;
+                background: #ffffff;
+                color: #555555;
+                text-decoration: none;
+              }
+            }
+
+            background: #0692d2;
+            color: #fff;
+            padding: 15px;
+            border-bottom: 1px solid #e5e5e5;
+            position: relative;
+
+          }
+      }
+
+
+
+  }
+
+  .modal-background {
+      /* modal background fixed across whole screen */
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+
+      /* semi-transparent black  */
+      background-color: #000;
+      opacity: 0.75;
+
+      /* z-index must be below .modal and above everything else  */
+      z-index: 900;
+  }
+
+
+}

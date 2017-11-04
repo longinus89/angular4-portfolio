@@ -4,7 +4,8 @@ import { DOCUMENT } from '@angular/common';
 
 @Component({
   selector: 'app-layout-sidebar',
-  templateUrl: './sidebar.component.html'
+  templateUrl: './sidebar.component.html',
+  styleUrls: ['./sidebar.component.scss']
 })
 export class SidebarComponent implements OnInit, OnChanges  {
 

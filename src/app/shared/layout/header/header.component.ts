@@ -2,12 +2,13 @@ import { Component, OnInit, Input, Output, EventEmitter, Inject, ViewChild, Elem
 import { PageScrollConfig, PageScrollService, PageScrollInstance } from 'ngx-page-scroll';
 import { DOCUMENT } from '@angular/common';
 
-import { User } from '../models';
-import { UserService } from '../services';
+import { User } from '../../models';
+import { UserService } from '../../services';
 
 @Component({
   selector: 'app-layout-header',
-  templateUrl: './header.component.html'
+  templateUrl: './header.component.html',
+  styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
 

@@ -2,7 +2,7 @@
 .site-gallery{
   .site-gallery-element{
     &:hover{
-      img{
+      .site-gallery-element-preview-image > img{
         -webkit-transition: all 0.5s;
         transition: all 0.5s;
         -webkit-transform: rotate(-360deg) scale(0);
@@ -14,7 +14,7 @@
       }
     }
     .site-gallery-element-preview-image{
-      img{
+      > img{
         width: 100%;
         max-height: 380px;
         height: auto;
@@ -57,6 +57,6 @@
     }
 
     position: relative;
-    
+
   }
 }

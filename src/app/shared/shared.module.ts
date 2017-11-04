@@ -6,6 +6,7 @@ import { RouterModule } from '@angular/router';
 
 import { ShowAuthedDirective } from './show-authed.directive';
 import { Tab, Tabs } from './tabs';
+import { ModalComponent } from './modal';
 
 @NgModule({
   imports: [
@@ -18,7 +19,8 @@ import { Tab, Tabs } from './tabs';
   declarations: [
     ShowAuthedDirective,
     Tab,
-    Tabs
+    Tabs,
+    ModalComponent
   ],
   exports: [
     CommonModule,
@@ -28,7 +30,8 @@ import { Tab, Tabs } from './tabs';
     RouterModule,
     ShowAuthedDirective,
     Tab,
-    Tabs
+    Tabs,
+    ModalComponent
   ]
 })
 export class SharedModule {}

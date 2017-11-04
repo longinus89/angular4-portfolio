@@ -1,0 +1,18 @@
+<div class="modal-wrapper">
+  <div class="modal" id="{{mid}}" (click)="close()">
+    <div class="modal-body" (click)="$event.stopPropagation()">
+      <div class="overlay-panel-header">
+        <h4 class="modal-title">{{mtitle}}</h4>
+        <a class="modal-close" (click)="close()">
+            <span class="fa fa-fw fa-close"></span>
+        </a>
+      </div>
+      <div class="overlay-panel-content">
+          <ng-content></ng-content>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="modal-background"></div>
+</div>

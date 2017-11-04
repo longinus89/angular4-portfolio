@@ -23,7 +23,7 @@ export class ApiService {
     /*if (this.jwtService.getToken()) {
       headersConfig['Authorization'] = `Token ${this.jwtService.getToken()}`;
     }*/
-    let auth = "Basic " + btoa("stevan@litobac.com:zg758gA4XplGhXWDagQL7tfeNM9qsNyq");
+    const auth = 'Basic ' + btoa('stevan@litobac.com:zg758gA4XplGhXWDagQL7tfeNM9qsNyq');
     headersConfig['Authorization'] = auth;
 
     return new Headers(headersConfig);

@@ -1,4 +1,4 @@
-# angular4-portfolio
+# angular4-portfolio development
 
 This is my portfolio coded with angular 4. 
 

@@ -1,6 +1,6 @@
 # angular4-portfolio
 
-This is my portfolio coded with angular 4
+This is my portfolio coded with angular 4. 
 
 ## Local setup
 

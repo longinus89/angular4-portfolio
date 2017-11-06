@@ -1,4 +1,4 @@
-# angular4-portfolio
+# angular4-portfolio in MASTER
 
 This is my portfolio coded with angular 4. 
 

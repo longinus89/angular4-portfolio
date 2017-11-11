@@ -8,18 +8,10 @@ import { PageScrollConfig } from 'ngx-page-scroll';
 })
 export class AppComponent implements OnInit {
 
-  menuActive = false;
-
   constructor (
   ) {
     PageScrollConfig.defaultScrollOffset = 72;
   }
   ngOnInit() {
-  }
-
-  receiveMessage($event) {
-    console.log('receiveMessage ' + $event);
-
-    this.menuActive = $event
   }
 }

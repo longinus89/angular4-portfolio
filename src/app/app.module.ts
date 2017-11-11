@@ -27,7 +27,7 @@ import {
 
 import {LayoutService} from './shared/services/layout.service';
 
-const rootRouting: ModuleWithProviders = RouterModule.forRoot([], { useHash: true });
+const rootRouting: ModuleWithProviders = RouterModule.forRoot([], { useHash: false });
 
 @NgModule({
   declarations: [

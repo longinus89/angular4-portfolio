@@ -1,12 +1,8 @@
 import { Component, OnInit, OnChanges } from '@angular/core';
-import { FormBuilder, FormGroup, FormControl } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { trigger, state, style, transition, animate, keyframes } from '@angular/animations';
 
-import { MenuItem } from 'primeng/primeng';
 import { SiteRecommendation } from './site-recommendation.model';
-import { SiteRecommendationOwner } from './site-recommendation-owner.model';
 import { SiteRecommendationsService } from './site-recommendations.service';
 
 @Component({
@@ -57,9 +53,7 @@ export class SiteRecommendationsComponent implements OnInit, OnChanges {
             setTimeout(function(){ that.setRecommendationListMinHeight() }, that.delayTime);
           };
         },
-        error => {
-          console.log(error)
-        }
+        error => console.log(error)
       );
     }
 

@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { SiteGalleryComponent } from './site-gallery.component';
-import { AuthGuard, SharedModule } from '../shared';
+import { SharedModule } from '../shared';
 import { AccordionModule, ButtonModule, SplitButtonModule, MenuItem, CalendarModule, OverlayPanelModule } from 'primeng/primeng';
 import { CarouselModule } from 'ngx-bootstrap';
 

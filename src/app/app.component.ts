@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { UserService } from './shared';
 import { PageScrollConfig } from 'ngx-page-scroll';
 
 @Component({

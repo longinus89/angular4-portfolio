@@ -22,11 +22,6 @@ export class ModalComponent implements AfterViewInit, OnDestroy {
 
     ngAfterViewInit(): void {
         const modal = this;
-        const that = this;
-
-        console.log(this.mid);
-        console.log(this.mtitle);
-        console.log(this.item);
 
         this.element = document.getElementById(this.mid);
 
@@ -47,18 +42,14 @@ export class ModalComponent implements AfterViewInit, OnDestroy {
 
     // open modal
     open(): void {
-      console.log('open modal ' + this.mid);
       this.modalService.closeAll();
       this.element.style.display = 'block';
       this.element.parentNode.style.display = 'block';
-      // document.body.classList.add('modal-open');
     }
 
     // close modal
     close(): void {
-        console.log('close modal ' + this.mid);
         this.element.style.display = 'none';
         this.element.parentNode.style.display = 'none';
-        // document.body.classList.remove('modal-open');
     }
 }

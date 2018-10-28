@@ -1,6 +1,5 @@
-import { Component, Inject, ViewChild, ElementRef, OnInit } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
-import { PageScrollConfig, PageScrollService, PageScrollInstance } from 'ngx-page-scroll';
+import { Component, Inject, OnInit } from '@angular/core';
+import { PageScrollService, PageScrollInstance } from 'ngx-page-scroll';
 import { DOCUMENT } from '@angular/common';
 
 @Component({

@@ -2,6 +2,16 @@
   "site-recommendations": [
     {
       "uuid": 1,
+      "description": "Antonio is a brilliant and enthusiastic developer and I’m glad to recommend him. He is skilled as web developer but also demonstrates an excellent attitude to work on projects to build a digital product from scratch. He is an ideal member of a team because works in partnership and is an hard worker. His enthusiastic behaviour is excellent to reach the project's goals.",
+      "owner": {
+        "name":"Giovanni Stracquadaneo",
+        "role":"CEO",
+        "company":"i2MFactory"
+      },
+      "image" : "assets/images/avatars/giovanni_avatar.jpg"
+    },
+    {
+      "uuid": 2,
       "description": "The growth of a human and working group is directly connected to the elements within. Antonio is certainly an added value in this growth. Always available and attentive to the company's priorities and needs, constantly growing personaly and professionaly by documenting the latest technologies and innovations in the computing sector. Definitely recommended.",
       "owner": {
         "name":"Nicolò Risitano",
@@ -9,16 +19,6 @@
         "company":"i2MFactory"
       },
       "image" : "assets/images/avatars/nicolo_avatar.jpg"
-    },
-    {
-      "uuid": 2,
-      "description": "In the course of business activities Antonio has always been proactive in learning new knowledge and available in participation in events, courses and training workshops. For its seriousness and commitment, Antonio is an ideal professional for the development and execution of complex projects, having excellent time management capabilities",
-      "owner": {
-        "name":"Giovanni Stracquadaneo",
-        "role":"CEO",
-        "company":"i2MFactory"
-      },
-      "image" : "assets/images/avatars/giovanni_avatar.jpg"
     }
   ]
 }

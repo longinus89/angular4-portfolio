@@ -26,18 +26,13 @@ export class ModalService {
     }
 
     open(id: string) {
-
-        console.log('open in modal service');
-
         // open modal specified by id
         this.modals.forEach(function(modal) {
-            console.log(modal.mid + '?' + id);
             if (modal.mid === id) {
               modal.open();
               return;
             }
         });
-
     }
 
     close(id: string) {

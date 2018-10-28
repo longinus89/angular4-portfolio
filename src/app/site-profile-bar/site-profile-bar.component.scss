@@ -1,0 +1,144 @@
+.about-me{
+  .about-me-top{
+    .about-me-image{
+      .profile-picture {
+          width: 145px;
+          height: 145px;
+      }
+      .center-block {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+      }
+      .img-circle {
+          border-radius: 50%;
+          max-width: 140px;
+      }
+      img {
+          vertical-align: middle;
+          border: 0;
+      }
+    }
+    .about-me-name{
+
+      h1{
+        width: 80%;
+        margin: 0 auto;
+        background-color: rgba(78, 63, 21, 0.40);
+        border-radius: 18px;
+        padding: 12px;
+      }
+    }
+    .about-me-profession{
+
+      h3{
+        width: 80%;
+        margin: 0 auto;
+        background-color: rgba(78, 63, 21, 0.40);
+        border-radius: 18px;
+        padding: 12px;
+      }
+    }
+    .about-me-socials{
+      .social-networks{
+        li {
+            display: inline-block;
+        }
+        a {
+            display: block;
+            position: relative;
+            margin: 0 7px;
+            width: 45px;
+            height: 45px;
+            font-size: 0;
+            line-height: 0;
+            text-align: center;
+            text-decoration: none;
+            &:hover, &:focus {
+                text-decoration: none;
+            }
+        }
+        .icon-facebook:hover:before, .icon-facebook:focus:before {
+            background: #3b5998;
+            border: 2px solid transparent;
+        }
+        .icon-linkedin:hover:before, .icon-linkedin:focus:before {
+            background: #0077B5;
+            border: 2px solid transparent;
+        }
+        .icon-cv:hover:before, .icon-cv:focus:before {
+            background: #ad9e2e;
+            border: 2px solid transparent;
+        }
+        a:before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            height: 100%;
+            margin-top: -50%;
+            margin-left: -50%;
+            border-radius: 100px;
+            background-color: transparent;
+            border: 2px solid #000;
+            border-color: rgba(16, 15, 12, 0.8);
+            -webkit-transition: all 400ms;
+            transition: all 400ms;
+            color: rgba(16, 15, 12, 0.8);
+        }
+        &.spin-icon a:hover:after, &.spin-icon a:focus:after {
+            -webkit-transition: -webkit-transform 0.4s ease-out;
+            transition: -webkit-transform 0.4s ease-out;
+            transition: transform 0.4s ease-out;
+            transition: transform 0.4s ease-out, -webkit-transform 0.4s ease-out;
+            -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+            color: rgb(255, 255, 255);
+        }
+        &.spin-icon li a.icon-cv:hover:after, &.spin-icon li a.icon-cv:focus:after {
+          color: rgba(16, 15, 12, 0.8);
+        }
+        .icon-facebook:after {
+            content: "";
+        }
+        .icon-linkedin:after {
+            content: "";
+        }
+        .icon-cv:after {
+          content: "\f2be";
+        }
+        a:after {
+            position: relative;
+            display: block;
+            font-family: 'FontAwesome';
+            speak: none;
+            font-style: normal;
+            font-weight: normal;
+            font-variant: normal;
+            text-transform: none;
+            line-height: 1;
+            color: rgba(16, 15, 12, 0.8);
+            font-size: 20px;
+            line-height: 47px;
+        }
+
+        width: 20%;
+        min-width: 230px;
+        margin: 0 auto;
+        background-color: rgba(255, 255, 255, 0.56);
+
+        border-radius: 18px;
+        padding: 12px;
+        text-align: center;
+
+      }
+
+    }
+
+    font-family: "Raleway", Arial, Verdana, sans-serif;
+    color: white;
+    background-image: url(/assets/images/background-header-2.jpg);
+    background-size:cover;
+  }
+}

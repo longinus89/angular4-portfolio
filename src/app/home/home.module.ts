@@ -8,6 +8,7 @@ import { SiteRecommendationsModule } from '../site-recommendations';
 import { SiteProfileInfoModule } from '../site-profile-info';
 import { SiteExpertnessModule } from '../site-expertness';
 import { SiteContactMeModule } from '../site-contact-me';
+import { SiteProfileBarModule } from '../site-profile-bar/site-profile-bar.module';
 
 const homeRouting: ModuleWithProviders = RouterModule.forChild([
   {
@@ -25,7 +26,8 @@ const homeRouting: ModuleWithProviders = RouterModule.forChild([
     SiteRecommendationsModule,
     SiteProfileInfoModule,
     SiteExpertnessModule,
-    SiteContactMeModule
+    SiteContactMeModule,
+    SiteProfileBarModule
   ],
   declarations: [
     HomeComponent

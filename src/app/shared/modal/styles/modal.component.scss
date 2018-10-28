@@ -38,16 +38,16 @@
       .modal-body {
         padding: 3px;
         margin: 17px;
-
+        height: 80%;
 
           .overlay-panel-content {
             background: #fff;
             padding: 1.5em;
             overflow-y: auto;
             overflow-x: hidden;
-            max-height: 400px;
             font-size: 14px;
             padding: 30px;
+            height: 100%;
           }
           .overlay-panel-header {
             a {

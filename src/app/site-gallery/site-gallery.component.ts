@@ -1,13 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, FormControl } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { AccordionModule, ButtonModule, SplitButtonModule, MenuItem,
-  CalendarModule, OverlayPanelModule, OverlayPanel } from 'primeng/primeng';
+import { OverlayPanel } from 'primeng/primeng';
 import { SiteGalleryElement } from './site-gallery-element.model';
 import { SiteGalleryService } from './site-gallery.service';
-import { ModalService, ModalComponent } from '../shared/modal';
+import { ModalService } from '../shared/modal';
 
 @Component({
   selector: 'app-site-gallery',
@@ -35,7 +32,6 @@ export class SiteGalleryComponent implements OnInit {
       obs.subscribe(
         data => {
           that.items = data;
-          console.log(that.items);
           that.selectedItem = data[0];
         },
         error => console.log(error)
@@ -53,7 +49,6 @@ export class SiteGalleryComponent implements OnInit {
     }
 
     openModal(id: string) {
-        console.log('open modal in site gallery ' + id);
         this.modalService.open(id);
     }
 
